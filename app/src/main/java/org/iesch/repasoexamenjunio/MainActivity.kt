@@ -21,12 +21,18 @@ class MainActivity : ComponentActivity() {
         binding.btnApiPizzas.setOnClickListener {
             goToApiPizzas()
         }
+        binding.btnEmpleados.setOnClickListener {
+            goToEmpleados()
+        }
     }
     private fun goToAndroidVersions() {
         startActivity(Intent(this, AndroidVersionActivity::class.java))
     }
     private fun goToApiPizzas() {
         startActivity(Intent(this, ApiPizzasActivity::class.java))
+    }
+    private fun goToEmpleados() {
+        startActivity(Intent(this, EmpleadosActivity::class.java))
     }
 }
 
